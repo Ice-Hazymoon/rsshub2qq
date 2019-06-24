@@ -1,0 +1,21 @@
+{
+  "name": "rsshub2qq",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cqhttp": "^1.1.1",
+    "dayjs": "^1.8.14",
+    "del": "^4.1.1",
+    "download": "^7.1.0",
+    "file-type": "^12.0.0",
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.11",
+    "lowdb": "^1.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "rss-parser": "^3.7.1",
+    "winston": "^3.2.1"
+  }
+}
