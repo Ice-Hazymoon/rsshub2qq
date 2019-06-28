@@ -28,7 +28,7 @@ module.exports = {
 
 ### HTTP API 的相关配置
 
-依次进入 `\酷Q Pro\app\io.github.richardchien.coolqhttpapi\config` 目录，编辑对应的 json 文件（bot的QQ号.json）。用以下内容覆盖，`access_token` 和 `secret` 记得自己修改
+依次进入 `酷Q Pro/data/app/io.github.richardchien.coolqhttpapi/config` 目录，编辑对应的 json 文件（bot的QQ号.json）。用以下内容覆盖，`access_token` 和 `secret` 记得自己修改
 
 ```json
 {

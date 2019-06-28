@@ -90,7 +90,7 @@ function sub(config, send) {
                         images.push(imgPath);
                     })
                 } catch (error) {
-                    logger.error(`rss：图片下载失败 ==> ${config.name} ==> ${error}`);
+                    logger.error(`rss：图片下载失败 ==> ${config.name} ==> ${err.message || JSON.stringify(err)}`);
                 }
             }
             const cqimgpath = images.map(imgPath => {
@@ -113,13 +113,13 @@ function sub(config, send) {
                     del(path).catch(logger.error);
                 })
             }).catch(err => {
-                logger.error(`rss：发送失败 ==> ${item.link} ==> ${err}`);
+                logger.error(`rss：发送失败 ==> ${item.link} ==> ${err.message || JSON.stringify(err)}`);
                 images.forEach(path => {
                     del(path).catch(logger.error);
                 })
             });
         });
-    }).catch(err => logger.error(`rss：请求RSSHUB失败 ==> ${config.name} ==> ${err}`))
+    }).catch(err => logger.error(`rss：请求RSSHUB失败 ==> ${config.name} ==> ${err.message || JSON.stringify(err)}`))
 }
 
 module.exports = function (send) {
