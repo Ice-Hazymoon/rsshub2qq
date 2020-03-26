@@ -25,7 +25,7 @@ module.exports = async (str) => {
             json: true
         }).then(data => {
             if(data.errorCode === '0'){
-                resolve(data.translation[0]);
+                resolve(data.translation.join('\n'));
             }else{
                 reject('翻译出错');
             }
