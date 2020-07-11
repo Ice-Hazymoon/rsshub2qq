@@ -90,7 +90,7 @@ function sub(config, send) {
                         images.push(imgPath);
                     })
                 } catch (error) {
-                    logger.error(`rss：图片下载失败 ==> ${config.name} ==> ${err.message || JSON.stringify(err)}`);
+                    logger.error(`rss：图片下载失败 ==> ${config.name} ==> ${error.message || JSON.stringify(error)}`);
                 }
             }
             const cqimgpath = images.map(imgPath => {
